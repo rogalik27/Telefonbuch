@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    user-select:none;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.contact-table th, .contact-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+.contact-table th {
+    background-color: #f2f2f2;
+}
+.contact-table td:last-child {
+    width: 50px; 
+    text-align: center;
+    position: relative;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
