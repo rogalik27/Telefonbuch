@@ -71,7 +71,8 @@ public static function delete(){
 }
 
 public static function read(){
-    self::dbconnect_slave();
+    #self::dbconnect_slave(); comment out to get master-slave working
+    self::dbconnect_master();
     $stmt = self::$mysqli->prepare("SELECT * FROM contacts");
     if (!$stmt) {
         die("Prepare failed: " . self::$mysqli->error);
