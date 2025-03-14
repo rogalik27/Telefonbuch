@@ -14,7 +14,7 @@ private static function dbconnect_master() {
 }
 
 private static function dbconnect_slave() {
-    self::$mysqli = new mysqli("185.233.188.141", "slave", "slave-password", "telefonbuch");
+    self::$mysqli = new mysqli("192.168.56.100", "slave", "slave-password", "telefonbuch");
     if (self::$mysqli->connect_errno) {
         die("Connection failed: " . $mysqli->connect_error);
     }
